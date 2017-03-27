@@ -1,0 +1,21 @@
+//install python2.7 python3.2
+sudo apt-get install python2.7 python2.7-dev python3.2 python3.2-dev
+sudo apt-get install build-essential libssl-dev libevent-dev libjpeg-dev libxml2
+
+//install pip virualenv
+sudo apt-get install python-pip
+sudo pip install virtualenv
+
+//config python2.7 virtualenv  python3.2 virtualenv
+virtualenv --no-site-packages -p /usr/bin/python2.7 ~/.venv/python2.7
+--
+
+//swap ~/.bashrc
+if[ -f !/.venv/python2.7/bin/activate ]; then
+	. ~/.venv/python2.7/bin/activate
+fi
+
+//install git-flow
+sudo apt-git install git-flow
+
+
