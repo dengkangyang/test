@@ -7,4 +7,4 @@ def fib(n):
 		a,b = b, a+b
 	return a
 
-print fib(10)
+print (fib(10))
